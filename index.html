@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NexaJS - The Node.js Alternative</title>
+  <meta name="description" content="NexaJS is a fast, modern, and powerful alternative to Node.js built on the Chrome V8 engine." />
+  <link rel="icon" href="favicon.ico" />
+  <style>
+    /* Reset & base */
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #eee;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #00aaff;
+    }
+    nav a {
+      margin-left: 1.5rem;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+
+    main {
+      flex: 1;
+      padding: 3rem 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    main h2 {
+      font-size: 2.75rem;
+      margin-bottom: 0.5rem;
+      color: #00aaff;
+    }
+    main p.lead {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      color: #bbb;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+    .feature {
+      background: #222;
+      border-radius: 8px;
+      padding: 1.5rem;
+      flex: 1 1 250px;
+      max-width: 300px;
+      box-shadow: 0 0 15px #00aaff33;
+      transition: transform 0.2s ease-in-out;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 25px #00aaffaa;
+    }
+    .feature h3 {
+      margin-top: 0;
+      color: #00ccff;
+    }
+    .feature p {
+      color: #ccc;
+      font-size: 1rem;
+    }
+
+    .cta-button {
+      background: #00aaff;
+      color: #121212;
+      border: none;
+      border-radius: 6px;
+      padding: 1rem 2rem;
+      font-size: 1.25rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .cta-button:hover {
+      background: #008ecc;
+    }
+
+    footer {
+      background: #1e1e1e;
+      padding: 1rem 2rem;
+      text-align: center;
+      color: #555;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NexaJS</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#get-started">Get Started</a>
+      <a href="https://github.com/NexaJS/NexaJS" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>The Node.js Alternative</h2>
+    <p class="lead">NexaJS is a fast, modern, and powerful runtime built on Chrome's V8 engine. Designed as a next-generation Node.js alternative to supercharge your JavaScript backend development.</p>
+
+    <section id="features" class="features" aria-label="NexaJS features">
+      <article class="feature">
+        <h3>Powered by V8</h3>
+        <p>Leverages Google’s high-performance JavaScript engine for lightning-fast execution and modern JS support.</p>
+      </article>
+      <article class="feature">
+        <h3>Lightweight & Modular</h3>
+        <p>Minimal core with modular packages to keep your projects lean and efficient without bloat.</p>
+      </article>
+      <article class="feature">
+        <h3>Easy Migration</h3>
+        <p>Built to be compatible with many Node.js APIs so you can switch with minimal changes.</p>
+      </article>
+      <article class="feature">
+        <h3>Robust Tooling</h3>
+        <p>Includes a powerful CLI, debugger, and rich ecosystem support for fast developer workflows.</p>
+      </article>
+    </section>
+
+    <section id="get-started">
+      <a href="https://github.com/NexaJS/NexaJS#installation" class="cta-button" target="_blank" rel="noopener">Get Started on GitHub</a>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 NexaJS — Built with ❤️ on V8
+  </footer>
+</body>
+</html>
